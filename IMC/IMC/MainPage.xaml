@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IMC.MainPage">
+
+
+
+    <Grid BackgroundColor="RoyalBlue">
+
+        <StackLayout>
+
+            <Label Text="CálculoIMC" TextColor="Black"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Center"
+                   FontSize="35" />
+
+
+
+            <Label Text="Digite o seu Peso: "  TextColor="Black" />
+
+            <Entry x:Name="txt_peso"  />
+
+            <Label Text="Digite sua Altura: " TextColor="Black"  />
+            <Entry x:Name="txt_altura"  />
+
+            <Button Text="Calcular" Clicked="Button_Clicked" />
+
+            <StackLayout VerticalOptions="CenterAndExpand"
+                BackgroundColor="#FFF"
+                Padding="10"
+                Margin="10">
+
+                <Grid ColumnDefinitions="*, *"
+                      RowDefinitions="*, *, *, *, *, *, *">
+
+                    <Label Grid.Row="0" Grid.Column="0" Text="Valores de Referência" TextColor="Black" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="IMC" TextColor="Black" />
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="Abaixo do Peso" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="Abaixo de 18,5" />
+
+                    <Label Grid.Row="2" Grid.Column="0" Text="Peso Normal" />
+                    <Label Grid.Row="2" Grid.Column="1" Text="18,5 - 24,9" />
+
+                    <Label Grid.Row="3" Grid.Column="0" Text="Excesso de Peso" />
+                    <Label Grid.Row="3" Grid.Column="1" Text="25 - 29,9" />
+
+                    <Label Grid.Row="4" Grid.Column="0" Text="Obesidade Classe I" />
+                    <Label Grid.Row="4" Grid.Column="1" Text="30 - 34,9" />
+
+                    <Label Grid.Row="5" Grid.Column="0" Text="Obesidade Classe II" />
+                    <Label Grid.Row="5" Grid.Column="1" Text="35 - 39,9" />
+
+                    <Label Grid.Row="6" Grid.Column="0" Text="Obesidade Clase III" />
+                    <Label Grid.Row="6" Grid.Column="1" Text="Maior ou Igual a 40" />
+
+
+
+                </Grid>
+                
+                
+                
+            </StackLayout>
+
+
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>
